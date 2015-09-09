@@ -13,7 +13,9 @@
 ```
 npm install cordova -g
 
+
 安装cordova pulgins
+
 
 ``` 
 cordova plugin add org.apache.cordova.camera
@@ -32,14 +34,18 @@ cordova plugin add com.knowledgecode.cordova.websocket
 ```
 cordova plugin add com.luhuiguo.cordova.voice
 
+
 安装依赖包
+
 
 ```
 npm install 
 ```
 bower install
 
+
 跑跑跑 
+
 
 ``` 
 cordova run ios
