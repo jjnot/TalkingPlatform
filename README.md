@@ -10,33 +10,38 @@
 
 安装cordova
 
-`` npm install cordova -g
+```
+npm install cordova -g
 
 安装cordova pulgins
 
-`` cordova plugin add org.apache.cordova.camera
-
-`` cordova plugin add org.apache.cordova.console
-
-`` cordova plugin add org.apache.cordova.file
-
-`` cordova plugin add org.apache.cordova.file-transfer
-
-`` cordova plugin add org.apache.cordova.media
-
-`` cordova plugin add cordova.phonegap.audio.encode
-
-`` cordova plugin add com.knowledgecode.cordova.websocket
-
-`` cordova plugin add com.luhuiguo.cordova.voice
+``` 
+cordova plugin add org.apache.cordova.camera
+```
+cordova plugin add org.apache.cordova.console
+```
+cordova plugin add org.apache.cordova.file
+```
+cordova plugin add org.apache.cordova.file-transfer
+```
+cordova plugin add org.apache.cordova.media
+```
+cordova plugin add cordova.phonegap.audio.encode
+```
+cordova plugin add com.knowledgecode.cordova.websocket
+```
+cordova plugin add com.luhuiguo.cordova.voice
 
 安装依赖包
 
-`` npm install 
-
-`` bower install
+```
+npm install 
+```
+bower install
 
 跑跑跑 
 
-`` cordova run ios
-`` cordova run android
+``` 
+cordova run ios
+```
+cordova run android
