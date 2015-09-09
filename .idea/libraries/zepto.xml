@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="zepto" type="javaScript">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../imspy/www/js/plus/zepto.min.js" />
+    </CLASSES>
+    <DOCUMENTATION>
+      <root url="http://zeptojs.com/" />
+    </DOCUMENTATION>
+    <SOURCES />
+  </library>
+</component>

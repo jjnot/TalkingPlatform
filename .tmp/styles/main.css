@@ -1,0 +1,154 @@
+html, body {
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Arial", "Hiragino Sans GB W3", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  /* 禁止选中文本（如无文本选中需求，此为必选项） */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  list-style: none; }
+
+input {
+  border: 0;
+  padding-left: 0; }
+
+#login_form .error li, #register_form .error li {
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  color: #d9534f; }
+  #login_form .error li .icon, #register_form .error li .icon {
+    font-size: 14px; }
+
+.home_content {
+  padding-top: 44px;
+  padding-bottom: 51px; }
+
+.checkbox-with-avatar {
+  padding-left: 16px;
+  padding-right: 60px; }
+  .checkbox-with-avatar label input {
+    float: right; }
+  .checkbox-with-avatar .item-inline {
+    border: none;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    min-height: 43px; }
+    .checkbox-with-avatar .item-inline img {
+      top: 0; }
+
+/**
+全局样式修改
+**/
+.scroll-content[has-footer="true"] {
+  bottom: 44px; }
+
+/*
+房主
+*/
+#watting_host #cancle-btn {
+  margin: 2px 0 0 0;
+  width: 33%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+#watting_host #start-btn {
+  margin: 2px 0 0 0;
+  width: 64%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  #watting_host #start-btn:before {
+    line-height: 28px; }
+
+/*游戏房间*/
+#game #record_btn {
+  margin-top: 0; }
+#game .words {
+  /* starting animations for enter */
+  /* terminal animations for enter */ }
+  #game .words .slide {
+    position: relative; }
+  #game .words .slide.ng-enter, #game .words .slide.ng-leave {
+    -webkit-transition: 0.1s linear all;
+    transition: 0.1s linear all; }
+  #game .words .slide.ng-enter {
+    left: 100%; }
+  #game .words .slide.ng-enter-active {
+    left: 0; }
+#game .item {
+  border: none; }
+  #game .item .voice_tag {
+    width: 100%;
+    height: 30px;
+    background-color: #00bcd4;
+    border-radius: 20px; }
+  #game .item .nick {
+    font-size: 12px; }
+  #game .item .avatar {
+    max-width: 50px;
+    max-height: 50px;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    left: 10px; }
+  #game .item .playicon {
+    float: right;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px; }
+
+#account-setting .icon {
+  color: #ddd;
+  font-size: 16px; }
+#account-setting #hp_title {
+  line-height: 60px; }
+#account-setting #hp_photo {
+  float: right;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px; }
+#account-setting .list_content_right {
+  float: right; }
+
+#tab_friends i {
+  color: #24c5f3; }
+
+#userDetail .detail_head {
+  margin-top: 10px; }
+  #userDetail .detail_head .headround {
+    display: block;
+    border: 6px solid #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    margin: auto; }
+#userDetail .userinfo {
+  margin-top: 20px; }
+#userDetail .detail-content {
+  float: right; }
+
+#tab_game .laoding {
+  text-align: center;
+  color: #333; }
+
+#room .users {
+  /* starting animations for enter */
+  /* terminal animations for enter */ }
+  #room .users .slide {
+    position: relative; }
+  #room .users .slide.ng-enter, #room .users .slide.ng-leave {
+    -webkit-transition: 0.1s linear all;
+    transition: 0.1s linear all; }
+  #room .users .slide.ng-enter {
+    left: 100%; }
+  #room .users .slide.ng-enter-active {
+    left: 0; }

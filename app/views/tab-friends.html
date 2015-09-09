@@ -1,0 +1,24 @@
+<ion-view title="好友" id="tab_friends">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+            Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="list">
+            <a class="item item-icon-left" ui-sref="tab.friendmsg">
+                <i class="icon ion-person-stalker"></i>新的好友
+                <span class="badge badge-assertive" ng-bind="data.msgNum"></span>
+            </a>
+            <a class="item item-icon-left" ng-click="addnewfriend()">
+                <i class="icon ion-plus"></i>添加好友
+            </a>
+
+
+            <a class="item item-avatar" ng-repeat="friend in friends" ui-sref="tab.userdetail({userid:'{{friend.username}}'})">
+                <img ng-src={{friend.head}}>
+                <h2>{{friend.nick}}</h2>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

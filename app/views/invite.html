@@ -1,0 +1,29 @@
+<ion-view title="邀请好友">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back" >
+            Back
+        </ion-nav-back-button>
+        <ion-nav-buttons side="right">
+            <button class="button  button-positive button-clear	" ng-click="confirm()">
+                确认
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+
+        <ul class="list">
+            <li class="item item-checkbox checkbox-with-avatar"   ng-repeat="friend in friends">
+                <label class="checkbox">
+                    <input type="checkbox" ng-model="friend.select">
+                </label>
+                <div class="item item-avatar item-inline">
+                    <img ng-src={{friend.head}}>
+                    <h2>{{friend.nick}}</h2>
+                </div>
+            </li>
+
+        </ul>
+
+    </ion-content>
+
+</ion-view>

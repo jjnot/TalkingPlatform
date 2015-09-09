@@ -1,0 +1,22 @@
+<ion-view title={{roomname}} id="watting_host">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+            Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content has-header="true" has-footer="true" padding="true">
+        <div class="list">
+            <ul id="target">
+                <li class="item item-avatar" ng-repeat="user in users">
+                    <img ng-src={{user.head}}>
+                    <h2>{{user.nick}}</h2>
+                    <p>{{user.status}}</p>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-stable">
+            <a class="button button-block" id="cancle-btn"  ng-click="exit()">取消</a>
+            <a class="button icon-right button-block ion-chevron-right button-positive" id="start-btn" ng-show="isHost" ng-click="startGame()">开始游戏</a>
+    </div>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view title="注册">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+            Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content has-header="true" padding="true">
+        <div class="content" id="register_form">
+            <div class="list list-inset" ng-controller="RegisterCtrl">
+                <lable class="item item-input">
+                    <input type="text" ng-model="userInfo.username" placeholder="请输入用户名">
+                </lable>
+                <lable class="item item-input">
+                    <input type="password" ng-model="userInfo.password" placeholder="请输入密码">
+                </lable>
+                <lable class="item item-input">
+                    <input type="text" ng-model="userInfo.nick" placeholder="请输入昵称">
+                </lable>
+                <div class="error">
+                    <li class="animate-repeat" ng-repeat="error in errors">
+                        <span class="ion-information-circled"></span>
+                        {{error}}
+                    </li>
+                </div>
+                <button class="button button-block button-balanced" ng-click="submit()">注册</button>
+                <a class="button button-block button-clear" ui-sref="index">已有账号？直接登录</a>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,22 @@
+<ion-view title="好友消息" id="friendMsg">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+            返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content has-header="true">
+        <div class="list">
+            <li class="item item-avatar" ng-repeat="msg in msgs">
+                <img ng-src={{msg.data.head}}>
+                <h2>{{msg.data.nick}}</h2>
+                <p>{{msg.content}}</p>
+                <button class="button button-positive" ng-show="msg.acceptable" ng-click="acceptFriend(msg.data.username,$index)">
+                    接受
+                </button>
+                <button class="button button-assertive" ng-show="msg.acceptable"ng-click="refuseFriend(msg.data.username,$index)">
+                    拒绝
+                </button>
+            </li>
+        </div>
+    </ion-content>
+</ion-view>

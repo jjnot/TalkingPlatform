@@ -1,0 +1,21 @@
+<ion-view title="游戏" id="tab_game">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+        Back
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="padding">
+        <div class="laoding" ng-show="isloading">
+          <i class="icon ion-android-download" ></i>数据加载中
+        </div>
+        
+        <div class="list card"  ui-sref="tab.invite({gametype:game.gametype})" ng-repeat="game in gamelist"> 
+            <div class="item item-divider">
+               <h3>{{game.gametype}}</h3>
+            </div>
+            <div class="item item-body">
+               <p>{{game.gamedes}}</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

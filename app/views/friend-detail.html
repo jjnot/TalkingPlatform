@@ -1,0 +1,25 @@
+<ion-view title="好友详情" id="userDetail">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+            返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content has-header="true" >
+        <div class="detail_head">
+            <img class="headround" ng-src={{user.head}}>
+        </div>
+        <ul class="list userinfo">
+            <li class="item">
+               昵称
+               <span class="detail-content">{{user.nick}}</span>
+            </li>
+            <li class="item">
+               用户名
+               <span class="detail-content">{{user.username}}</span>
+            </li>
+        </ul>
+
+        <button class="button button-block button-assertive" ng-click="deletefriend()">删除好友</button>
+
+    </ion-content>
+</ion-view>

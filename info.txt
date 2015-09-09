@@ -1,0 +1,30 @@
+Node version: v0.10.32
+
+Cordova version: 4.0.0
+
+Config.xml file: 
+
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.hoc.whoisSpy" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>WhoisSpy</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <access origin="110.64.90.523:3000" />
+</widget>
+
+
+Plugins: 
+
+com.knowledgecode.cordova.websocket,org.apache.cordova.file,org.apache.cordova.file-transfer,org.apache.cordova.media
+
+iOS platform:
+
+Xcode 6.1
+Build version 6A1052d
+

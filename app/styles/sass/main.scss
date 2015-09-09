@@ -1,0 +1,193 @@
+@import "global.scss";
+#login_form,
+#register_form {
+    .error li {
+        font-size: 14px;
+        padding: 5px 0 5px 0;
+        color: #d9534f;
+        .icon {
+            font-size: 14px;
+        }
+    }
+}
+
+.home_content {
+    padding-top: 44px;
+    padding-bottom: 51px;
+}
+
+.checkbox-with-avatar {
+    padding-left: 16px;
+    padding-right: 60px;
+    label {
+        input {
+            float: right;
+        }
+    }
+    .item-inline {
+        border: none;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        min-height: 43px;
+        img {
+            top: 0;
+        }
+    }
+}
+/**
+全局样式修改
+**/
+
+.scroll-content {
+    &[has-footer="true"] {
+        bottom: 44px;
+    }
+}
+/*
+房主
+*/
+
+#watting_host {
+    #cancle-btn {
+        margin: 2px 0 0 0;
+        width: 33%;
+        box-sizing: border-box;
+    }
+    #start-btn {
+        margin: 2px 0 0 0;
+        width: 64%;
+        box-sizing: border-box;
+        &:before {
+            line-height: 28px;
+        }
+    }
+}
+/*游戏房间*/
+
+#game {
+    #record_btn {
+        margin-top: 0;
+    }
+    .words {
+        .slide {
+            position: relative;
+        }
+        .slide.ng-enter,
+        .slide.ng-leave {
+            -webkit-transition: 0.1s linear all;
+            transition: 0.1s linear all;
+        }
+        .slide.ng-enter {
+            left: 100%;
+        }
+        /* starting animations for enter */
+        
+        .slide.ng-enter-active {
+            left: 0;
+        }
+        /* terminal animations for enter */
+    }
+    .item {
+        border: none;
+        .voice_tag {
+            width: 100%;
+            height: 30px;
+            background-color: #00bcd4;
+            border-radius: 20px;
+        }
+        .nick {
+            font-size: 12px;
+        }
+        .avatar {
+            max-width: 50px;
+            max-height: 50px;
+            width: 50px;
+            height: 50px;
+            top: 15px;
+            left: 10px;
+        }
+        .playicon {
+            float: right;
+            margin-right: 15px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px
+        }
+    }
+}
+
+#account-setting {
+    .icon {
+        color: #ddd;
+        font-size: 16px;
+    }
+    #hp_title {
+        line-height: 60px;
+    }
+    #hp_photo {
+        float: right;
+        border-radius: 5px;
+        width: 60px;
+        height: 60px;
+    }
+    .list_content_right {
+        float: right;
+    }
+}
+
+#tab_friends {
+    i {
+        color: #24c5f3;
+    }
+}
+
+#userDetail {
+    .detail_head {
+        margin-top: 10px;
+        .headround {
+            display: block;
+            border: 6px solid #fff;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .26);
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+    }
+    .userinfo {
+        margin-top: 20px;
+    }
+    .detail-content {
+        float: right;
+    }
+}
+
+#tab_game {
+    .laoding {
+        text-align: center;
+        color: #333;
+    }
+}
+
+#room {
+    .users {
+        .slide {
+            position: relative;
+        }
+        .slide.ng-enter,
+        .slide.ng-leave {
+            -webkit-transition: 0.1s linear all;
+            transition: 0.1s linear all;
+        }
+        .slide.ng-enter {
+            left: 100%;
+        }
+        /* starting animations for enter */
+        
+        .slide.ng-enter-active {
+            left: 0;
+        }
+        /* terminal animations for enter */
+    }
+}

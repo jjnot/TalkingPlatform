@@ -1,0 +1,31 @@
+<ion-view title="账户设置" id="account-setting">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+            Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <ul class="list">
+            <a class="item item-icon-right" ng-click="editeHead()">
+            	<span id="hp_title">头像</span>
+                <img id="hp_photo" ng-src={{userInfo.head}}>
+                <i class="icon ion-chevron-right"></i>
+            </a>
+            <a class="item item-icon-right" ui-sref="tab.editenick">
+            	<span>昵称</span>
+            	<span class="list_content_right">{{userInfo.nick}}</span>
+            	<i class="icon ion-chevron-right"></i>
+            </a>
+            <a class="item item-icon-right" ui-sref="tab.editepassword">
+            	<span>修改密码</span>
+            	<i class="icon ion-chevron-right"></i>
+            </a>
+            <li class="item">
+            	<span>用户名</span>
+            	<span class="list_content_right">{{userInfo.username}}</span>
+            </li>
+        </ul>
+
+        <button class="button button-block button-assertive" ng-click="logout()">登出</button>
+    </ion-content>
+</ion-view>
